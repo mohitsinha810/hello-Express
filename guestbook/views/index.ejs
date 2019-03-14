@@ -1,0 +1,16 @@
+<% include header %>
+<% if (entries.length) { %>
+<% entries.forEach(function(entry) { %>
+<div class="card">
+<div class="card-head">
+<%= entry.title %>
+</div>
+<div class="card-body">
+<%= entry.body %>
+</div>
+</div>
+<% }) %>
+<% } else { %><br>
+No entries! <a href="/new-entry">Add one!</a>
+<% } %>
+<% include footer %>
