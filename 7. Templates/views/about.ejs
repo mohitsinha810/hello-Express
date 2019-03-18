@@ -1,0 +1,12 @@
+<%- include header %>
+
+<h1>About Us</h1>
+
+<h2>List rendering</h2>
+
+<ul>
+<% lists.forEach(function(item){ %>
+	<li><%= item %></li>
+<% }) %>
+
+<% include footer %>

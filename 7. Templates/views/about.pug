@@ -1,0 +1,11 @@
+extend index.pug
+
+block content
+	h1 About Page
+	p This page extends the index.pug
+	p The app's name is <strong>#{name}</strong>.
+	p List iteration:
+	|
+	ul
+		each val in lists
+			li= val
